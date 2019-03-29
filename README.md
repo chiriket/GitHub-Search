@@ -2,7 +2,7 @@
 #### By **Shirley Keter**
 
 ## Description
-This application allows one to search for users and their repositories on Github.
+This application allows one to search for users and their repositories on GitHub.
 
 ## Setup/Installation Requirements
 github
@@ -11,13 +11,13 @@ Github API
 
 ## BDD
 
-|  INPUT           |   OUTPUT        |  BEHAVIOUR       |
-|------------------|-----------------|------------------|
-|Fill in username  | search results  | Github username  |             
-|                  |                 | and repositories |
-|in the search bar |                 | appears          |
-|                  |                 |                  |
-|------------------|-----------------|------------------|
+|  INPUT           |           OUTPUT                 |
+|------------------|----------------------------------|
+|Fill in username  | search results  Github username  |             
+|                  |                 and repositories |
+|in the search bar |                 appear           |
+|                  |                                  |
+|------------------|----------------------------------|
 
 
 ## Bugs

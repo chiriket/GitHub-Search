@@ -1,27 +1,46 @@
 # GithubSearch
+#### By **Shirley Keter**
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 7.3.6.
+## Description
+This application allows one to search for users and their repositories on Github.
 
-## Development server
+## Setup/Installation Requirements
+github
+Angular CLI
+Github API
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+## BDD
 
-## Code scaffolding
+|  INPUT           |   OUTPUT        |  BEHAVIOUR       |
+|------------------|-----------------|------------------|
+|Fill in username  | search results  | Github username  |             
+|                  |                 | and repositories |
+|in the search bar |                 | appears          |
+|                  |                 |                  |
+|------------------|-----------------|------------------|
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
 
-## Build
+## Bugs
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
+No known Bugs.
 
-## Running unit tests
+## Technologies Used
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+Built using:Angular js,
+HTML ,JavaScript ,CSS ,typescript.
 
-## Running end-to-end tests
+## Support and contact details
 
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
+Incase of issues and questions contact shirleyketer@gmail.com
 
-## Further help
+### License
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+MIT License
+Copyright (c) 2019 Shirley Keter
+
+
+
+
+
+
+

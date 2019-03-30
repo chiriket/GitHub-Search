@@ -1,6 +1,7 @@
 import { Injectable } from '@angular/core';
+import { HttpClient } from '@angular/common/http';
 import { Http, Headers } from '@angular/http';
-import 'rxjs/add/operator/map';
+import { map } from 'rxjs/operators';
 
 @Injectable()
 export class SearchService {
@@ -10,7 +11,7 @@ export class SearchService {
   private clientsecret = '5ab8a176a8d93c1c740400f04c70d57bfee1eb82';
   constructor(private http: Http) {
     console.log('Service is ready!');
-    this.username = 'Imma7';
+    this.username = 'Chiriket';
   }
 
   getProfileInfo() {

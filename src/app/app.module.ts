@@ -15,8 +15,8 @@ import { SearchService } from './searches/search.service'
   ],
   imports: [
     BrowserModule,
-    FormsModule
-    
+    FormsModule,
+    HttpClientModule
 
   ],
   providers: [SearchService],

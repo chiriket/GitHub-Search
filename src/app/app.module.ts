@@ -2,7 +2,6 @@ import { BrowserModule } from '@angular/platform-browser';
 import { RouterModule, Routes } from '@angular/router';
 import { NgModule } from '@angular/core';
 import {FormsModule} from '@angular/forms';
-import { HttpModule } from '@angular/http';
 import {HttpClientModule} from '@angular/common/http'
 
 
@@ -20,7 +19,6 @@ import { SearchService } from './searches/search.service'
     BrowserModule,
     FormsModule,
     HttpClientModule,
-    HttpModule
 
   ],
   providers: [SearchService],

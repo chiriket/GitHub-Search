@@ -1,7 +1,7 @@
 import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
-import { Http, Headers } from '@angular/http';
 import { map } from 'rxjs/operators';
+import { Observable} from 'rxjs';
 
 @Injectable()
 export class SearchService {
@@ -11,20 +11,20 @@ export class SearchService {
   private clientsecret = '5ab8a176a8d93c1c740400f04c70d57bfee1eb82';
   constructor(private http: HttpClient) {
     console.log('Service is ready!');
-    this.username = 'Chiriket';
+    this.username = 'chiriket';
   }
 
-  getProfileInfo() {
+  getProfileInfo(): Observable<Response> {
     // tslint:disable-next-line:max-line-length
     return this.http.get('https://api.github.com/users/' + this.username + '?client_id=' + this.clientid + '&client_secret=' + this.clientsecret)
-    .map(res => res.json());
+    .pipe(map(res => res.json()));
   }
 
-  getProfileRepos() {
+  getProfileRepos():Observable<Response> {
     // tslint:disable-next-line:max-line-length
     return this.http.get('https://api.github.com/users/' + this.username + '/repos?client_id=' + this.clientid + '&client_secret=' + this.clientsecret)
-    .map(res => res.json());
-  }
+    .pipe(map(res => res.json()));
+      }
 
   updateProfile(username: string) {
     this.username = username;

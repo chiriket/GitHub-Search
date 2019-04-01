@@ -19,8 +19,7 @@ export class SearchService {
 
   getProfileInfo():Observable<any> {
     
-    return this.http.get('https://api.github.com/users/'+this.username+ '/repos?client_id=' + this.clientid + '&client_secret=' + this.clientsecret)
-    .pipe(map(response =>(Observable)))
+    return this.http.get('https://api.github.com/users/'+this.username+ '?client_id=' + this.clientid + '&client_secret=' + this.clientsecret)
   } 
 
    
@@ -28,7 +27,6 @@ export class SearchService {
   getProfileRepos():Observable<any>{
     
     return this.http.get('https://api.github.com/users/' + this.username + '/repos?client_id=' + this.clientid + '&client_secret=' + this.clientsecret)
-    .pipe(map(response =>(Observable)))
   } 
 
 

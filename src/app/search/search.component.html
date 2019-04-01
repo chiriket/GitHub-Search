@@ -6,15 +6,14 @@
 
 <form action="" class="form-search">
   <div class="form-group">
-  <input type="text" class="form-control" placeholder="Username:" [(ngModel)]="username" name="username" (keyup)="findProfile()">
-  </div>
+  <input type="text" class="form-control" placeholder="Username:" [(ngModel)]="username" name="username" (keyup)="
+  findProfile()"  (keyup)=getRepos()>
+  </div> 
 </form>
 
 <div *ngIf="profile">
   <div class="panel panel-default">
     <div class="container-fluid">
-      <!-- {{profile.name}} <small>({{profile.login}})</small>
-      , <span *ngIf="profile.location">{{profile.location}}</span> -->
     </div>
 
     <div class="panel-body">

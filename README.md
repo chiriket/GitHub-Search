@@ -13,9 +13,9 @@ Github API
 
 |  INPUT           |           OUTPUT                 |
 |------------------|----------------------------------|
-|Fill in username  | search results  Github username  |             
-|                  |                 and repositories |
-|in the search bar |                 appear           |
+|Fill in username  | search results   gives           |             
+|                  | Github username and repositories |
+|in the search bar |                                  |
 |                  |                                  |
 |------------------|----------------------------------|
 

@@ -5,6 +5,7 @@ import { Observable } from 'rxjs';
 
 
 
+
 @Injectable()
 export class SearchService {
 
@@ -16,18 +17,18 @@ export class SearchService {
     this.username = 'chiriket';
   }
 
-  getProfileInfo() {
+  getProfileInfo():Observable<any> {
     
     return this.http.get('https://api.github.com/users/'+this.username+ '/repos?client_id=' + this.clientid + '&client_secret=' + this.clientsecret)
-    .pipe(map(response =>(Observable )))
+    .pipe(map(response =>(Observable)))
   } 
 
    
 
-  getProfileRepos() {
+  getProfileRepos():Observable<any>{
     
     return this.http.get('https://api.github.com/users/' + this.username + '/repos?client_id=' + this.clientid + '&client_secret=' + this.clientsecret)
-    .pipe(map(response =>(Observable )))
+    .pipe(map(response =>(Observable)))
   } 
 
 

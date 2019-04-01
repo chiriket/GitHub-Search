@@ -13,7 +13,7 @@ export class SearchService {
   private clientid =  '7117595d3ea79fb64947';
   private clientsecret = 'b51b8506c05aa1eb5018e955674bd496772b7c26';
   constructor(private http: HttpClient) {
-    console.log('Service is ready!');
+  
     this.username = 'chiriket';
   }
 

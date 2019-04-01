@@ -1,1 +1,7 @@
 /* You can add global styles to this file, and also import other style files */
+body{
+  background-image: url('https://images.all-free-download.com/images/graphicthumb/hexagon_blue_abstract_background_6815644.jpg');
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
